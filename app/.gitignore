@@ -1,1 +1,34 @@
-/build
+# Ignore gradle files
+.gradle/
+build/
+
+# Ignore Android Studio specific files
+.idea/
+*.iml
+
+# Ignore local configuration files
+local.properties
+.DS_Store
+
+# Ignore Android specific files
+# .apk files
+*.apk
+
+# Ignore generated files
+captures/
+
+# Ignore Keystore files (important for security reasons)
+*.jks
+*.keystore
+
+# Ignore IntelliJ IDEA files
+*.iws
+*.ipr
+.idea/
+
+# Ignore Gradle Wrapper
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Ignore .env files or other configuration files that may contain sensitive data
+.env
