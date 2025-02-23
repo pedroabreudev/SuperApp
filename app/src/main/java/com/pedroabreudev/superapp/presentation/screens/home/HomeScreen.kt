@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.pedroabreudev.superapp.presentation.components.AppToolbar
+import com.pedroabreudev.superapp.presentation.components.BannerContent
 import com.pedroabreudev.superapp.presentation.ui.theme.whiteColor
 
 @Composable
@@ -23,10 +24,16 @@ fun HomeScreen() {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .wrapContentSize(Alignment.Center)
+                .wrapContentSize(Alignment.TopStart)
                 .background(whiteColor)
                 .padding(innerPadding)
-        ) { }
+        ) {
+            BannerContent(
+                title = "Hello world",
+                description = "This is a Description",
+                imageUrl = "https://www.jrebel.com/sites/default/files/image/2021-01/what%20is%20kotlin%20banner%20image.png"
+            )
+        }
     }
 }
 

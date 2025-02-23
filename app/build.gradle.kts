@@ -76,4 +76,7 @@ dependencies {
     implementation(libs.hilt.navigation.compose)
 
     implementation(libs.androidx.core.splashscreen)
+
+    implementation(libs.coil)
+    implementation(libs.coilNetwork)
 }
